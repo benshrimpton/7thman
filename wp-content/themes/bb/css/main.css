@@ -1,0 +1,645 @@
+@font-face {
+font-family: 'NeuzeitSLTStd-Book';
+src: url('fonts/neuzeitsltstd-book.eot');
+src: url('fonts/neuzeitsltstd-book.eot?#iefix') format('embedded-opentype'),	
+		url('fonts/neuzeitsltstd-book.ttf') format('truetype'),
+		url('fonts/neuzeitsltstd-book.svg#neuzeitsltstd-book') format('svg');
+		font-weight: normal;
+		font-style: normal;
+}
+@font-face {
+    font-family: 'supergroteskcomp-mediumRg';
+    src: url('fonts/supergroteskweb-medium-webfont.eot');
+    src: url('fonts/supergroteskweb-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/supergroteskweb-medium-webfont.woff') format('woff'),
+         url('fonts/supergroteskweb-medium-webfont.ttf') format('truetype'),
+         url('fonts/supergroteskweb-medium-webfont.svg#supergroteskcomp-mediumRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+font-family: 'Mono Social Icons Font';
+src: url('fonts/MonoSocialIconsFont-1.10.eot');
+src: url('fonts/MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
+url('fonts/MonoSocialIconsFont-1.10.woff') format('woff'),
+url('fonts/MonoSocialIconsFont-1.10.ttf') format('truetype'),
+url('fonts/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+src: url('fonts/MonoSocialIconsFont-1.10.ttf') format('truetype');
+font-weight: 100;
+font-style: normal;
+}
+/* ########## @group Reset ########## */
+html{ overflow-y:scroll; height:100%; }
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+a{color:inherit;font-size:100%;vertical-align:baseline;background:transparent;outline:none;text-decoration:none;margin:0;padding:0;}
+a:active,a:visited,a img{outline:none;text-decoration:none;border:none;}
+table{border-collapse:collapse;border-spacing:0;}
+select,input,textarea,button{font:99%sans-serif;}
+a:hover,a:active{outline:none; text-decoration: none;}
+ol{list-style-type:decimal;}
+small{font-size:85%;}
+td,td img{vertical-align:top;}
+textarea{overflow:auto;}
+input[type=checkbox]{vertical-align:bottom;}
+label,input[type=button],input[type=submit],button{cursor:pointer;}
+pre,blockquote{border:none;page-break-inside:avoid;}
+tr,img{page-break-inside:avoid;}
+ul,li{list-style:none;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:none;}::selection{}
+h1,h2,h3,h4,h5,h6{font-weight:400;}
+address{font-style:normal;}
+body{font:13px/1.231 sans-serif;height:100%;}.clear{clear:both;}.chromeframe{position:absolute;left:0;right:0;bottom:0;top:0;background:#fff;padding:100px;color:#000;z-index:29000;font-size:1.5em;line-height:normal;}.chromeframe p{color:#000;line-height:normal;margin:0 0 20px;}.chromeframe p strong{font-size:2em;font-weight:400;}.chromeframe p a{color:#3B5998;}.chromeframe p a:hover{text-decoration:underline;}.chromeframe small{font-size:0.5em;}.hidden{display:none;}
+b, strong { font-weight: normal; *:focus{ outline: none;}}
+/* ########## @end reset ##########  */
+
+
+
+
+/* ==========================================================================
+	BOOTSTRAP OVERIDES
+ ========================================================================== */
+/*
+ .container {
+	 padding-left: 0px;
+	 padding-right: 0px;
+ }
+ .row {
+	 margin-left: 0px;
+	 margin-right: 0px;
+ }
+*/
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.container {
+	 padding-left: 0px;
+	 padding-right: 0px;
+ }
+.btn {
+	border-radius: 0px;
+	font-size: inherit;
+}
+h1, h2, h3, h4, h5, h5 {
+	 font-family: 'supergroteskcomp-mediumRg';
+}
+.page-header {
+	font-family: 'supergroteskcomp-mediumRg';
+	font-size: 1.2em;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	padding-bottom: 1em;
+	margin-bottom: 1.5em;
+	min-height: 2em;
+}	
+
+body {
+	color: black;	
+	font-size: 16px;
+	line-height: 1.5;
+	font-family: 'NeuzeitSLTStd-Book';
+}
+a, ul, li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	color: inherit;
+	font-size: 100%;
+}
+a:hover {
+	color: inherit;
+}
+
+
+/* ==========================================================================
+	HEADER
+ ========================================================================== */
+.main-header  {
+	position: relative;
+	padding: 40px 0;
+}
+
+.logo {
+	width: 300px;
+	height: 90px;
+/*
+	background: url(img/logo.jpg) no-repeat center top;
+	background-size: 100%;
+*/
+	font-size: 3em;
+	position: relative;
+	margin: 0px auto 20px auto;
+	transition: opacity ease .3s;
+/* 	border: solid 1px silver; */
+	}
+.logo a {
+	display: block;
+	position: absolute;
+	left: 0;
+	top:0;
+	right: 0;
+	bottom: 0;
+}
+.logo:hover {
+	opacity: 0.5;
+}
+.main-navigation {
+	text-align: center;
+	font-family: 'supergroteskcomp-mediumRg';
+	text-transform: capitalize;
+	margin-bottom: 1em;
+}
+.main-navigation ul,
+.main-navigation ul li,
+.main-navigation ul li a {
+	display: inline-block;
+}
+.main-navigation ul li a {
+	transition: color ease-in-out .3s;
+	font-size: 2.8em;
+}
+.main-navigation ul li a:hover {
+	color: silver;
+	text-decoration: underline;
+}
+.main-navigation ul li.current-menu-item a {
+	text-decoration: underline;
+	color: silver;
+}
+.main-navigation ul li a {
+	margin: 0 .4em;
+}
+#search-box-wrapper {
+	
+}
+#search-box {
+position: fixed;
+background: rgba(255, 255, 255, .9);
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+z-index: 999;
+display: none;
+}
+#search-box.toggled {
+display: block;	
+}
+#searchform {
+	margin: 0;
+	position: absolute;
+	display: block;
+	top: 50%;
+	left: 30px;
+	right: 30px;
+	height: 3em;
+}
+#searchform.focussed {
+	width: 320px;
+} 
+#searchform label {
+	display: none;
+}
+#searchform input[type=submit]{
+	height: 3em;
+	width: 10%;
+	color: white;
+	border: none;
+	margin: 0;
+	padding: 0;
+	display: block;
+	float: left;
+	background: url(img/search.svg) no-repeat center bottom;
+	background-size: 30px 30px;
+	text-indent: -10000px;
+	overflow: hidden;
+/*
+	outline: none;
+	border-left: none;
+	background: white;
+	padding: 0;
+	margin: 0;
+	width: 30px;
+	height: 30px;
+	overflow: hidden;
+	text-indent: -10000px;
+	transition: background-color ease .3s;
+*/	
+
+}
+#searchform input[type=submit]:hover {
+
+}
+#searchform input[type=text]{
+	height: 3em;
+	width: 90%;
+	color: white;
+	border: none;
+	margin: 0;
+	padding: 0;
+	display: block;
+	float: left;
+	border-bottom: solid 3px black;
+	background: transparent;
+}
+#searchform input[type=text]:focus {
+	outline: none;
+}
+#search-form-toggle {
+	cursor: pointer;
+}
+#search-form-close {
+	position: fixed;
+	top: 50px;
+	right: 50px;
+	z-index: 320000;
+	
+	display: none;	
+}
+#search-form-close.toggled {
+	display: block;
+}
+
+
+.social-links,
+.social-links li,
+.social-links li a  {
+	display: inline-block ;
+	font-family: 'Mono Social Icons Font';
+	
+}
+.social-links li a {
+	font-size: 2em;
+	transition: opacity ease .3s;
+}
+.social-links li a:hover {
+	opacity: .4;
+}
+/* ==========================================================================
+HOMEPAGE + POSTS
+ ========================================================================== */
+.post.primary-hero {
+  padding-right: 20px;
+}
+ .post.primary-hero p {
+	 font-size: 1em;
+ }
+.homepage-heros {
+ padding-left: 0px;
+ padding-right: 0;
+}
+.homepage-heros .post-thumb img {
+	width: 100% !important;
+	height: auto !important;
+}
+.homepage-time {
+ font-size: .5em;
+ letter-spacing: 0.1em;
+}
+.post {
+	margin-bottom: 1em;
+}
+.post .inner {
+	margin: 0 12px;
+}
+.post .post-thumb {
+	display: block;
+	margin: 0px auto .6em auto;
+	transition: opacity ease .3s;
+}
+.post .post-thumb img {
+	margin-bottom: 0;
+	width: 100%;
+	height: auto;
+}
+.post .post-thumb:hover {
+	opacity: .6;
+}
+.post img {
+	display: block;
+	margin: 0 auto 2em auto;
+}
+.post h2  {
+	font-size: 1em;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	margin: 0 0 .5em 0;
+}
+.post h2 a  {
+	text-decoration: none;
+	transition: opacity ease .3s;
+}
+.post h2 a:hover {
+	opacity: .5;
+}
+.secondary-hero .post h2  { 
+	font-size: .6em;
+	letter-spacing: 0.05em;
+}
+.secondary-hero {
+	padding: 0;
+}
+.secondary-hero .post {
+	margin-bottom: 15px;
+	padding: 0;
+}
+.post p {
+	font-size: 0.75em;
+	margin: 0;
+	padding: 0;
+}
+/* SINGLE */
+.single-post .post h2  {
+	font-size: 3em;
+}
+.single-post .related-posts .post h2 {
+	font-size: .85em;
+	letter-spacing: 0.05em;
+}
+.single-post p {
+	font-size: 1em;
+	line-height: 1.8em;
+}
+.single-post-wrapper {
+	max-width: 800px;
+}
+.single-post-wrapper p {
+	max-width: 640px;
+	margin: 0 auto 2em auto;
+}
+.single-post-wrapper p a {
+	text-decoration: underline;
+	font-weight: bold;
+	transition: color ease 0.3s;
+}
+.single-post-wrapper p a:hover {
+	color: silver;
+} 
+.single-post .related-posts p {
+	font-size: .65em;
+}
+.single-post-wrapper img {
+	max-width: 100%;
+	height: auto;
+}
+.author span {
+	color: silver;
+}
+.read-more {
+	color: #cc0000;;
+	font-size: 0.8em;
+	font-family: supergroteskcomp-mediumRg;
+	text-transform: capitalize;
+}
+.read-more:hover {
+	color: #ff3333;
+	text-decoration: underline;
+} 
+.timestamp {
+		font-family: 'supergroteskcomp-mediumRg';
+		text-transform: uppercase;
+		margin: 2.4em auto;
+		font-size: .7em;
+		display: block;
+		padding: 1.8em 0;
+		letter-spacing: 0.02em;
+}
+.author-slug {
+		font-family: 'supergroteskcomp-mediumRg';
+		text-transform: uppercase;
+		margin: 2.5em auto;
+		font-size: .7em;
+		letter-spacing: 0.02em;
+}
+.timestamp span,
+.author-slug span {
+	color: #cc0000;;
+}
+.author-slug span a:hover {
+	text-decoration: underline;
+}
+.post-footer {
+	margin: 0 auto 4em auto;
+	font-size: .7em;
+	border-bottom: solid 1px #ddd;
+	padding-bottom: 3em;
+	color: gray;
+}
+.post-footer a {
+	text-decoration: underline;
+	color: #666;
+}
+.post-footer a:hover {
+	color: black
+}
+.related-posts-header {
+	font-size: 1.5em;
+	margin-bottom: 2em;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+.related-posts-header span {
+	text-transform: capitalize;
+	font-size: .6em
+}
+
+
+/* ==========================================================================
+MAIN SECTION
+ ========================================================================== */
+.main {
+	padding-bottom: 3em;
+}
+
+
+/* ==========================================================================
+ARCHIVES AUTHOR
+ ========================================================================== */
+.archive-title span {
+	color: #cc0000;
+}
+
+/* ==========================================================================
+	FOOTER
+ ========================================================================== */
+.main-footer {
+	min-height: 200px;
+	border-top: solid 1px #ddd;
+	padding: 40px 0 40px 0;
+	font-size: .75em
+}
+.main-footer .copyright {
+	padding: 60px 0 40px 0;
+	border-top: solid 1px #ddd;
+	font-family: 'supergroteskcomp-mediumRg';
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+.footer-col-wrap {
+	padding-bottom: 40px;
+	margin: 0 20px;
+}
+#mc_embed_signup label {
+	display: block;
+	margin-bottom: .5em;
+}
+#mc_embed_signup input[type=email] {
+	border-radius: 0px;
+	box-shadow: none;
+	transition: all ease .6s;
+	margin-bottom: .5em;
+}
+#mc_embed_signup input[type=email]:focus {
+	border-color: black;
+} 
+#mc_embed_signup input[type=submit] {
+transition: all ease .6s;	
+}
+
+
+
+#mc_embed_signup input[type=submit]:hover {
+	color: white;
+	background: black;
+	border: solid 1px black;
+}
+.response.mc-response {
+	padding: 1em 0;
+	color: #cc0000;;
+}
+  
+
+/* ==========================================================================
+MEDIA QUERIES
+ ========================================================================== */
+  @media (max-width: 1199px) {
+	  	.main-navigation ul li a {
+		font-size: 2.45em;
+	}
+	  }
+ @media (max-width: 992px) {
+	 .main-navigation ul li a {
+		font-size: 1.9em; 
+	 }
+	.post.primary-hero {
+	  padding-right: 0px;
+	}
+
+ }
+ 
+ 
+@media (max-width: 800px) {
+	.main-header {
+		padding-top: 0;
+	}
+	.logo {
+		width: 90%;
+		background-size: 95%;
+		height: 194px;
+	}
+	.main-footer,
+	.main-footer > * {
+		text-align: center !important;
+		float: none;
+	}
+	.main-footer ul,
+	.main-footer li {
+		text-align: center !important;
+	}
+	.main-footer li a {
+		display: block;
+		padding: .5em;
+	}
+	.utility-wrap .pull-left,
+	.utility-wrap .pull-right {
+		float: none !important;
+		text-align: center;
+		padding: 20px 0;
+	}
+	div#mc_embed_signup {
+		text-align: center;
+		padding: 3em 0;
+	}
+}
+
+
+
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid requi#cc0000; HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
