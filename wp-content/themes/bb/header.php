@@ -28,6 +28,19 @@
 
 <!-- <iframe src="http://bbdev.co/harrywinston/secrets/" style="width:970px; height: 250px; margin: 0 auto; display: block; "></iframe> -->
 
+<section class="latest-issue-banner">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<h2>SEVENTH MAN ISSUE 8</h2>
+				<p>Buy Seventh Man issue 8 now</p>
+			</div>
+			<div class="col-md-4">
+				<a href=""><img src="http://7mwp.bbdev.co/7ThMan_issue_8-1.png" class="img-block"></a>
+			</div>
+		</div>
+	</div>
+</section>
 <header id="masthead" class="main-header text-center container-fluid" role="banner">
 
 
@@ -43,7 +56,9 @@
 				</ul>
 			</div>
 			<div class="col-md-6 pull-right">
+				<small class="logo-sub">the official</small>
 				<h1 class="logo">
+					
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 					<?php bloginfo( 'name' ); ?>
 				</a>
@@ -51,12 +66,13 @@
 			</div>
 			<div class="col-md-3 text-left">
 				<div id="search-box-wrapper">
-					<span class="glyphicon glyphicon-search" id="search-form-toggle"></span>
+<!-- 					<span class="glyphicon glyphicon-search" id="search-form-toggle"></span> -->
 					<span class="glyphicon glyphicon-remove" id="search-form-close"></span>
 					<div id="search-box">
 						<?php get_search_form(); ?>
 					</div>
 				</div>
+				<a href="">Subscribe</a>
 			</div>
 		</div>
 	</section>

@@ -13,7 +13,7 @@
 	
 		<?php while ( have_posts() ) : the_post();  ?>
 			
-				<article class="col-sm-6 col-md-3 post">
+				<article class="col-sm-6 col-md-3 post text-center">
 				
 					<a href="<? the_permalink();?>">
 					<figure class="post-thumb">
@@ -23,7 +23,7 @@
 		
 					<h2><a href="<? the_permalink();?>"><?  the_title(); ?></a></h2>
 				
-					<?php the_excerpt(); ?>
+					<?php //the_excerpt(); ?>
 					
 					<a href="<? the_permalink();?>" title="<?  the_title(); ?>" class="read-more">Read more</a>
 						
