@@ -17,30 +17,16 @@
 	<link rel="stylesheet"  href="<?php bloginfo( 'template_url' ); ?>/css/bootstrap.css">
 	<link rel="stylesheet"  href="<?php bloginfo( 'template_url' ); ?>/css/main.css">
 
-<?php // Loads HTML5 JavaScript file to add support for HTML5 elements in older IE versions. ?>
-	<!--[if lt IE 9]>
-		<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
-	<![endif]-->
+	<script  src="<?php bloginfo( 'template_url' ); ?>/js/vendor/modernizr-2.8.3.min.js"></script>
 <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
+	
 
-<!-- <iframe src="http://bbdev.co/harrywinston/secrets/" style="width:970px; height: 250px; margin: 0 auto; display: block; "></iframe> -->
+<?php require_once 'inc/latest-issue-banner.php'; ?>
 
-<section class="latest-issue-banner">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-8">
-				<h2>SEVENTH MAN ISSUE 8</h2>
-				<p>Buy Seventh Man issue 8 now</p>
-			</div>
-			<div class="col-md-4">
-				<a href=""><img src="http://7mwp.bbdev.co/7ThMan_issue_8-1.png" class="img-block"></a>
-			</div>
-		</div>
-	</div>
-</section>
+
 <header id="masthead" class="main-header text-center container-fluid" role="banner">
 
 
@@ -49,6 +35,7 @@
 	<section class="utility-wrap container">
 		<div class="row">
 			<div class="col-md-3 pull-right text-right">
+				<a href="">Subscribe</a>
 				<ul class="social-links">
 					<li><a href="#">&#xe086;</a></li>
 					<li><a href="#">&#xe100;</a></li>
@@ -72,7 +59,7 @@
 						<?php get_search_form(); ?>
 					</div>
 				</div>
-				<a href="">Subscribe</a>
+				
 			</div>
 		</div>
 	</section>

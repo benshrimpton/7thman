@@ -21,6 +21,10 @@ $categories = get_the_category($post->ID);
 						<time class="timestamp" datetime=""><?echo $categories[0]->cat_name ?> / <? the_time();  ?> / <? the_date(); ?> </time>
 						<h2><? the_title(); ?></h2>
 						<div class="author-slug">By <span><a href="/author/<? the_author(); ?>"><a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php the_author_firstname(); ?> <?php the_author_lastname(); ?></a></a></span></div>
+						
+						<a href="<?php echo get_permalink( $post->ID ); ?>">Tweet This</a>
+						<a href="<?php echo get_permalink( $post->ID ); ?>">Share on Facebook</a>
+						<a href="<?php echo get_permalink( $post->ID ); ?>">Share On Tumblr</a>
 					</header>
 					
 				

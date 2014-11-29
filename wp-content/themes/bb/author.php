@@ -45,17 +45,17 @@ get_header(); ?>
 	
 		<?php while ( have_posts() ) : the_post();  ?>
 			
-				<article class="col-sm-6 col-md-3 post">
+				<article class="col-sm-3 col-md-2 post text-center">
 				
 					<a href="<? the_permalink();?>">
 					<figure class="post-thumb">
-						<?php the_post_thumbnail('medium', array('class' => 'img-responsive')); ?>
+						<?php the_post_thumbnail('thumbnail', array('class' => 'img-responsive')); ?>
 					</figure>
 					</a>
 		
 					<h2><a href="<? the_permalink();?>"><?  the_title(); ?></a></h2>
 				
-					<?php the_excerpt(); ?>
+					<?php //the_excerpt(); ?>
 					
 					<a href="<? the_permalink();?>" title="<?  the_title(); ?>" class="read-more">Read more</a>
 						

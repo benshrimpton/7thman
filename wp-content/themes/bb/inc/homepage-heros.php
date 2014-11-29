@@ -48,28 +48,34 @@
 
 <section class="container homepage-heros">
 	<div class="row">
-		<?php query_posts($query_string."&featured=yes & posts_per_page=2 & offset=2"); ?>	
-		<?php while ( have_posts() ) : the_post();  ?>
-		<article class="col-sm-4 col-md-4 post text-center">
-			<div class="inner inner-extra-wide">
-			<time class="homepage-time"><? the_time();  ?> / <? the_date(); ?></time>
-			<a href="<? the_permalink();?>">
-			<figure class="post-thumb">
-				<?php the_post_thumbnail('hero-thumb', array('class' => 'img-responsive')); ?>
-			</figure>
-			</a>			
-			<h2><a href="<? the_permalink();?>"><?  the_title(); ?></a></h2>
-			<a href="<? the_permalink();?>" title="<?  the_title(); ?>" class="read-more">Read more</a>
-		</div>
-		</article>
-		<?php endwhile; wp_reset_query(); ?>
 		
-		
-		<aside class="col-md-4 text-center ad-unit-300-600 ad-unit">
-		<div class="ad-unit-inner">
-			<img src="http://placehold.it/300x600" style="display: block; margin: 0 auto;"/>
+		<div class="col-sm-12 col-md-8">
+			<div class="container-fluid">
+				<div class="row">
+					<?php query_posts("posts_per_page=6 & offset=3"); ?>	
+					<?php while ( have_posts() ) : the_post();  ?>
+					<article class="col-sm-6 col-md-4 post text-center">
+						<div class="inner inner-extra-wide">
+						<time class="homepage-time"><? the_time();  ?> / <? the_date(); ?></time>
+						<a href="<? the_permalink();?>">
+						<figure class="post-thumb">
+							<?php the_post_thumbnail('thumbnail', array('class' => 'img-responsive')); ?>
+						</figure>
+						</a>			
+						<h2><a href="<? the_permalink();?>"><?  the_title(); ?></a></h2>
+						<a href="<? the_permalink();?>" title="<?  the_title(); ?>" class="read-more">Read more</a>
+					</div>
+					</article>
+					<?php endwhile; wp_reset_query(); ?>
+				</div>
+			</div>
 		</div>
-	</aside>
+		
+		<aside class="col-sm-12 col-md-4 text-center ad-unit-300-600 ad-unit">
+			<div class="ad-unit-inner">
+				<img src="http://placehold.it/300x600" style="display: block; margin: 0 auto;"/>
+			</div>
+		</aside>
 	
 	</div>
 </section>
