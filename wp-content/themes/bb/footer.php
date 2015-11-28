@@ -20,23 +20,22 @@
 				<li><a href="/about">About</a></li>
 				<li><a href="/advertising">Advertising</a></li>
 				<li><a href="/contact">Contacts</a></li>
-				<li><a href="/disclaimer">Disclaimer</a></li>
 			</ul>
 		</section>
 		
 		
 		<section class="col-md-4">
 			<ul class="social">
-				<li><a href="#">Facebook</a></li>
-				<li><a href="#">Instagram</a></li>
-				<li><a href="#r">Twitter</a></li>
+				<li><a href="https://www.facebook.com/7thman" target="_blank" title="Follow on Facebook">Facebook</a></li>
+				<li><a href="http://instagram.com/7thmanmagazine" target="_blank" title="Follow on Instagram">Instagram</a></li>
+				<li><a href="https://twitter.com/7thmanmagazine"  target="_blank" title="Follow on Twitter">Twitter</a></li>
 			</ul>			
 		</section>
 		
 		
 		<section class="col-md-4 text-left">
 			<div id="mc_embed_signup">
-			<form action="///blackandblackcreative.us5.list-manage.com/subscribe/post-json?u=94027bb9731e2703ba393e4dc&amp;id=5bd501d0cc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form" target="_blank" novalidate>
+			<form action="//7thmanmagazine.us2.list-manage.com/subscribe/post-json?u=0668f78ed632408588d6a9d9b&amp;id=a01f694a8f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form" target="_blank" novalidate>
 							
 					<div class="control-group">
 						<label class="">Subscribe to newsletter</label>
@@ -53,6 +52,8 @@
 	
 	</div>
 	
+
+
 
 	
 	</div><!-- end container -->

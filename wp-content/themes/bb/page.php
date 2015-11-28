@@ -16,15 +16,13 @@ get_header(); ?>
 
 
 <section class="container text-center">
-
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3 text-justify">
 			<?php while ( have_posts() ) : the_post(); ?>
-			
-			<h2><?php the_title(); ?></h2>
-			
-			<?php the_content(); ?>
-		
-			<?php endwhile; // end of the loop. ?>
-
+				<?php the_content(); ?>
+			<?php endwhile; ?>
+		</div>
+	</div>		
 </section>
 
 

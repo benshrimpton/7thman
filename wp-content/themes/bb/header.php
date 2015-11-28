@@ -3,8 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-sclae=1">
-	<meta name="robots" content="noindex, nofollow" >
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="robots" content="index, follow" >
+	<meta name="google-site-verification" content="E2DyBhfYTQb0gSWg-dubZ--hVoFc9SQ_KM6-cfZfypE" />
 	
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 
@@ -22,26 +23,24 @@
 <body <?php body_class(); ?>>
 	
 
-<?php require_once 'inc/latest-issue-banner.php'; ?>
+
 
 
 <header id="masthead" class="main-header text-center container-fluid" role="banner">
 
-
-
-
 	<section class="utility-wrap container">
 		<div class="row">
-			<div class="col-md-3 pull-right text-right">
-				<a href="">Subscribe</a>
+			<div class="col-md-3 pull-right text-right mobile-center">
 				<ul class="social-links">
-					<li><a href="#">&#xe086;</a></li>
-					<li><a href="#">&#xe100;</a></li>
-					<li><a href="#">&#xe027;</a></li>
+					<li><a href="https://twitter.com/7thmanmagazine" target="_blank" title="Follow on Twitter">&#xe086;</a></li>
+					<li><a href="http://instagram.com/7thmanmagazine" target="_blank" title="Follow on Instagram">&#xe100;</a></li>
+					<li><a href="https://www.facebook.com/7thman"  target="_blank" title="Follow on Facebook">&#xe027;</a></li>
+					
+					
+				
 				</ul>
 			</div>
-			<div class="col-md-6 pull-right">
-				<small class="logo-sub">the official</small>
+			<div class="col-md-6 pull-right mobile-center">
 				<h1 class="logo">
 					
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
@@ -49,7 +48,7 @@
 				</a>
 			</h1>
 			</div>
-			<div class="col-md-3 text-left">
+			<div class="col-md-3 text-left mobile-center">
 				<div id="search-box-wrapper">
 <!-- 					<span class="glyphicon glyphicon-search" id="search-form-toggle"></span> -->
 					<span class="glyphicon glyphicon-remove" id="search-form-close"></span>

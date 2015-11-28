@@ -1,9 +1,25 @@
 //Toggle serach for wrappers
+/*
 $('#search-form-toggle, #search-form-close').on('click', function(){
 	$('#search-box, #search-form-close').toggleClass('toggled');
 	
 	$('#search-form input#s').attr('value','Search...');
 }); 
+*/
+
+//apl fits vids to all iframes embedded in the text of posts.
+var videoIframes = $('p > iframe');
+console.log( videoIframes );
+
+
+$('input#s').on('focus', function(){
+
+	$('body, html').animate({
+		scrollTop : 0
+	} , 200 );
+	
+});
+
 
 //remove width and heights that WP applies to images in post body
 $('img').each(function(){

@@ -22,9 +22,13 @@ $categories = get_the_category($post->ID);
 						<h2><? the_title(); ?></h2>
 						<div class="author-slug">By <span><a href="/author/<? the_author(); ?>"><a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php the_author_firstname(); ?> <?php the_author_lastname(); ?></a></a></span></div>
 						
-						<a href="<?php echo get_permalink( $post->ID ); ?>">Tweet This</a>
-						<a href="<?php echo get_permalink( $post->ID ); ?>">Share on Facebook</a>
-						<a href="<?php echo get_permalink( $post->ID ); ?>">Share On Tumblr</a>
+						
+						<div class="social-shares">
+						<a href="http://twitter.com/share?url=<?php echo get_permalink( $post->ID ); ?>" target="_blank">&#xe086;</a>
+						<a href="http://www.facebook.com/sharer.php?u=<?php echo get_permalink( $post->ID ); ?>" target="_blank">&#xe027;</a>
+						<a href="http://www.tumblr.com/share/link?url=<?php echo get_permalink( $post->ID ); ?>" target="_blank">&#xe085;</a>
+						</div>
+		
 					</header>
 					
 				
